@@ -115,11 +115,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & {\color{dark-grey}} \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\resumeProjectHeading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\vspace{1pt}\\ % second row of resume entry
+    \end{tabular*}\vspace{-20pt}
 }
 
 \newcommand{\resumeExtracurricularsHeading}[1]{
@@ -160,31 +161,6 @@
 	\\ \vspace{-3pt}
 \end{center}
 
-% Education %
-\section{EDUCATION}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Truman State University}{Aug. 2020 -- May 2023}
-{Bachelor of Science in Computer Science, Minor in Business Administration}{Kirksville, MO}
-{GPA: 3.4}
-\resumeItemListStart
-\resumeItem {\textbf{Coursework}: OOP and Design, Data Structures, Algorithm Analysis}
-\resumeItem
-{\textbf{Awards and Honors}: Truman President's Honorary Scholarship, Transfer Recognition Scholarship}
-\resumeItemListEnd
-
-\resumeSubheading
-{Moberly Area Community College}{Aug. 2019 -- Jul. 2020}
-{Associates of Arts in General Studies}{Moberly, MO}
-{GPA: 3.5}
-\resumeItemListStart
-\resumeItem {\textbf{Coursework}: Public Speaking, Calculus and Trigonometry}
-\resumeItem
-{\textbf{Awards and Honors}: Missouri A+ Scholarship, President's List}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
 % Programming Skills %
 \section{SKILLS}
 \begin{itemize}[leftmargin=0in, label={}]
@@ -202,7 +178,8 @@
 \section{PROJECTS}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Main Street Kirksville Website}} {Sept. 2019 -- Mar. 2021}
+{Main Street Kirksville Website}{\href{https://github.com/jagger-harris/main-street-kirksville-designs}{GitHub}}
+{}{}
 \resumeItemListStart
 \resumeItem{\textbf{Fullstack developer and designer} of a non-profit organization website led by Truman ACM}
 \resumeItem{Communicated within a team of fullstack developers and voiced agreements and concerns to fellow developers}
@@ -213,7 +190,8 @@
 
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{OpenGL Project}} {Sept. 2019 -- Mar. 2021}
+{OpenGL Program}{\href{https://github.com/jagger-harris/opengl-example-program}{GitHub}}
+{}{}
 \resumeItemListStart
 \resumeItem{Applied the graphics programming library OpenGL using \textbf{C++} to draw cubes and other shapes in a program}
 \resumeItem{Learned matrices, vectors, and other linear algebraic techniques}
@@ -222,17 +200,41 @@
 
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{UDAO Dapp}} {Sept. 2019 -- Mar. 2021}
+{Decentralized App}{\href{https://github.com/UniversityDAO/udao}{GitHub}}
+{}{}
 \resumeItemListStart
-\resumeItem{Created the frontend for the University Decentralized Autonomous Organization for our decentralized app}
+\resumeItem{Created the frontend for a decentralized app in the University Decentralized Autonomous Organization}
 \resumeItem{Implemented the frontend using \textbf{React} and contributed to the backend using \textbf{Javascript}}
 \resumeItem{Cooperated with 3 other developers during developement, proposing ideas and suggestions along the way}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
+% Education %
+\section{EDUCATION}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Truman State University}{May 2023}
+{Bachelor of Science in Computer Science, Minor in Business Administration}{Kirksville, MO}
+{}
+\resumeItemListStart
+\resumeItem {\textbf{Coursework}: OOP and Design, Data Structures, Algorithm Analysis}
+\resumeItem
+{\textbf{Awards and Honors}: Truman President's Honorary Scholarship, Transfer Recognition Scholarship}
+\resumeItemListEnd
+
+\resumeSubheading
+{Moberly Area Community College}{Jul. 2020}
+{Associates of Arts in General Studies}{Moberly, MO}
+{}
+\resumeItemListStart
+\resumeItem {\textbf{Coursework}: Public Speaking, Calculus and Trigonometry}
+\resumeItem
+{\textbf{Awards and Honors}: Missouri A+ Scholarship, President's List}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 % Extracurriculars %
-
 \section{EXTRACURRICULARS}
 \resumeSubHeadingListStart
 \resumeExtracurricularsHeading
@@ -248,7 +250,7 @@
 {\textbf{University Decentralized Autonomous Organization}}
 \resumeItemListStart
 \resumeItem{\textbf{Founded} an organization which promotes decentralization using a DAO, educating members along the way}
-\resumeItem{Developed an in-house DAO from scratch using \textbf{NodeJS}, \textbf{Hardhat}, \textbf{Solidity}, and \textbf{React}}
+\resumeItem{Developed an in-house DAO application from scratch using \textbf{NodeJS}, \textbf{Hardhat}, \textbf{Solidity}, and \textbf{React}}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
